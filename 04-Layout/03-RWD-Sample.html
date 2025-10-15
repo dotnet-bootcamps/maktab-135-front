@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+
+    <style>
+      /* Reset body margin */
+      body {
+        margin: 0;
+      }
+
+      /* Header styling */
+      #header {
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Main content */
+      #main {
+        display: block;
+      }
+
+      /* Left Sidebar */
+      #left {
+        background-color: lightgreen;
+        width: 200px;
+        height: 400px;
+        float: left;
+      }
+
+      /* Right Sidebar */
+      #right {
+        background-color: lightcoral;
+        width: 200px;
+        height: 400px;
+        float: right;
+      }
+
+      /* Main content area */
+      #content {
+        height: 400px;
+        margin-left: 200px;
+        margin-right: 200px;
+        background-color: aqua;
+      }
+
+      /* Footer styling */
+      #footer {
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        #left,
+        #right {
+          float: none;
+          width: 100%;
+          height: auto;
+        }
+
+        #content {
+          margin: 0;
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">Header</div>
+
+    <!-- Main -->
+    <div id="main">
+      <div id="left">Left Sidebar</div>
+      <div id="right">Right Sidebar</div>
+      <div id="content">Main Content</div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">Footer</div>
+  </body>
+</html>
