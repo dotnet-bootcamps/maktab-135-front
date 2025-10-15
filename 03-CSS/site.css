@@ -1,0 +1,50 @@
+body {
+  font-family: "Segoe UI";
+  /*font-family: "Trirong", serif;*/
+
+  background-image: url(img/logo.jpg);
+  background-repeat: repeat-y;
+}
+
+#intro {
+  /* border-width: 5px;
+border-color: #FF0000;
+border-style: double; */
+  border: #ff0000 5px double;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2 {
+  color: green;
+}
+
+#skills {
+  color: rgb(238, 130, 238);
+}
+
+/*
+این رول برای استایل دهی به بخش مهارت ها هست
+*/
+#skills_ul {
+  height: 500px;
+  width: 400px;
+  border: 1px #ff0000 solid;
+  text-align: center;
+  box-shadow: 10px 10px 10px black; /* دستوری برای سایه انداخن */
+  
+  padding: 20px;
+  /* padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px; */
+
+  margin-bottom: 100px;
+  /* margin:0 0 100px 0; */
+}
+
+.list {
+  color: chocolate;
+}
