@@ -3,70 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Layout</title>
+    <title>Layout with DIV</title>
 
     <style>
-      /* Reset body margin */
       body {
         margin: 0;
       }
 
-      /* Header styling */
+      .container {
+        display: flex;
+      }
+
       #header {
         background-color: lightblue;
         padding: 20px;
         text-align: center;
       }
 
-      /* Main content */
       #main {
-        display: block;
+        display: flex;
+        flex-direction: row;
       }
 
-      /* Left Sidebar */
       #left {
         background-color: lightgreen;
         width: 200px;
         height: 400px;
-        float: left;
+        /* float: left; */
       }
 
-      /* Right Sidebar */
       #right {
         background-color: lightcoral;
         width: 200px;
         height: 400px;
-        float: right;
+        /* float: right; */
       }
 
-      /* Main content area */
       #content {
+        flex-grow: 1;
         height: 400px;
-        margin-left: 200px;
-        margin-right: 200px;
+        /* margin-left: 200px;
+        margin-right: 200px; */
         background-color: aqua;
       }
 
-      /* Footer styling */
       #footer {
         background-color: lightgray;
         padding: 20px;
         text-align: center;
+        /* clear: both; */
       }
 
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        #left,
-        #right {
-          float: none;
-          width: 100%;
-          height: auto;
+      @media (max-width: 800px) {
+        #main {
+          display: flex;
+          flex-direction: column;
         }
 
-        #content {
-          margin: 0;
+        #left,
+        #right {
           width: 100%;
-          height: auto;
         }
       }
     </style>
@@ -77,9 +73,9 @@
 
     <!-- Main -->
     <div id="main">
-      <div id="left">Left Sidebar</div>
-      <div id="right">Right Sidebar</div>
+      <div id="left">Left</div>
       <div id="content">Main Content</div>
+      <div id="right">right</div>
     </div>
 
     <!-- Footer -->
