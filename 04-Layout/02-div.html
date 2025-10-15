@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout with DIV</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+
+      #header {
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+      }
+
+      #main {
+        display: block;
+      }
+
+      #left {
+        background-color: lightgreen;
+        width: 200px;
+        height: 400px;
+        float: left;
+      }
+
+      #right {
+        background-color: lightcoral;
+        width: 200px;
+        height: 400px;
+        float: right;
+      }
+
+      #content {
+        height: 400px;
+        margin-left: 200px;
+        margin-right: 200px;
+        background-color: aqua;
+      }
+
+      #footer {
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+        /* clear: both; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">Header</div>
+
+    <!-- Main -->
+    <div id="main">
+      <div id="left">Left</div>
+      <div id="right">right</div>
+      <div id="content">Main Content</div>
+    </div>
+<div style="clear: both;"></div>
+    <!-- Footer -->
+    <div id="footer">Footer</div>
+  </body>
+</html>
